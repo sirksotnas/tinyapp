@@ -1,7 +1,10 @@
+const generateRandomString = function (string) {
+  const results = Math.random().toString(36).substring(2, 2 + string);
+  return results;
+};
 const express = require("express");
 const app = express();
 const PORT = 8080; // default port 8080
-
 app.set("view engine", "ejs");
 
 const urlDatabase = {
