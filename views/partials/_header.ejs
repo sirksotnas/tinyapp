@@ -17,8 +17,7 @@
         <a class="nav-item nav-link" href="/urls">My URLs</a>
         <a class="nav-item nav-link" href="/urls/new">Create New URL</a>
       </div>
-     </div>
-      <div class="ml-auto">
+      <div class="ml-md-auto">
         <% if (user) { %>
           <span class="text-white mr-3">Welcome, <%= user.email %>!</span>
           <form action="/logout" method="POST" class="form-inline">
@@ -31,4 +30,4 @@
       </div>
     </div>
   </nav>
-</header>
+</header>        
